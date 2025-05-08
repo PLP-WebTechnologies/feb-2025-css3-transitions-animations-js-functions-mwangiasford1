@@ -1,0 +1,177 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: white;
+}
+
+#mainHeading {
+    opacity: 0;
+    transform: scale(0.95) translateY(30px);
+    filter: blur(4px);
+    letter-spacing: 0.1em;
+    transition: 
+        opacity 1.2s ease-out,
+        transform 1.2s ease-out,
+        filter 1s ease-out,
+        letter-spacing 1s ease-out;
+}
+
+/* Trigger this class for animation */
+#mainHeading.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+    letter-spacing: normal;
+}
+
+
+
+/* Navbar Styling */
+#navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Animated Element */
+#animatedElement {
+    width: 200px;
+    height: 50px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* Button Styling */
+#animateBtn {
+    background: linear-gradient(to right, orange, brown);
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+#animateBtn:hover {
+    background: linear-gradient(to right, brown, orange);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.image-container {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.image-container button {
+    margin-top: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    width: 100%;
+    height: auto;
+    margin: 50px;
+    padding: 30px; /* Added the semicolon */
+    border-radius: 5px;
+    
+}
+
+
+
+
+/* Mobile View (Hamburger Menu) */
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none; /* Hide menu by default on mobile */
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu icon */
+    }
+
+    #navLinks.active {
+        display: block; /* Show the menu when active */
+    }
+
+    #navbar {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Transitions & Animation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1  id="mainHeading">JavaScript Transition & Animation</h1>
+            <nav id="navbar">
+                <div class="nav-links">
+                    <div class="logo">
+                        <img src="https://img.freepik.com/free-photo/person-playing-3d-video-games-device_23-2151005751.jpg?t=st=1746685885~exp=1746689485~hmac=d3f5bdd766bb66130a7df2d29342a79a68db4861b8b2097016b0f87446761d7c&w=996" alt="Logo">
+                    </div>
+                    <div>
+                        <!-- Hamburger icon for mobile -->
+    <div id="hamburgerMenu" class="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+                    </div>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- User Preference Selector -->
+        <label for="colorPicker">Choose a color:</label>
+        <input type="color" id="colorPicker">
+
+        <!-- Animated Element -->
+        <div id="animatedElement">WELCOME</div>
+        <button id="animateBtn">Click To Animate</button>
+    </div>
+
+    <h1>Photo Gallery</h1>
+    <div class="gallery">
+        <img src="https://img.freepik.com/free-photo/3d-rendering-kid-playing-digital-game_23-2150898492.jpg?t=st=1746714573~exp=1746718173~hmac=79fa7d7e65b3c5908616e24c8a618d5962aebdd0c613647a20ed265af20a4d81&w=740" alt="Image 1">
+        <img src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.jpg?s=1024x1024&w=is&k=20&c=WqGfiIeod3kNA5XFFRRa0w5uhoL3c2PfxoWYNXfvl68=" alt="Image 2">
+        <img src="https://media.istockphoto.com/id/1390285717/photo/asian-programmer-writing-code-on-a-laptop.jpg?s=1024x1024&w=is&k=20&c=P2dNd5EsADFnaHJ_pdmHzypqr4EDuvPKwHffVVmYflk=" alt="Image 3">
+        <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150061972.jpg?t=st=1746714705~exp=1746718305~hmac=bd48d1437aaf6662851ea2413545601c0e65318d71c3bbe0904bab9f281ef734&w=996" alt="Image 4">
+        <img src="https://img.freepik.com/free-photo/programmer-home-office-concentrating-finding-bugs-while-he-codes_482257-118355.jpg?t=st=1746714782~exp=1746718382~hmac=e0ad73a15c1634eb9f7387e05a3aa9d5d6b3daa4a3ba1ab7fa3de21033ea05f4&w=1380" alt="Image 5">
+        <img src="https://img.freepik.com/free-photo/programer-sitting-desk-with-multiple-screens-running-code-talking-with-colleague-about-artificial-intelligence-algorithm-software-developers-doing-innovative-artificial-intelligence-project_482257-40606.jpg?t=st=1746714817~exp=1746718417~hmac=65b2a166821e6b2cc2fc3e7e6df6c70fc20bed21ea244c6a6cf65d049eab7456&w=1380" alt="Image 6">
+        <img src="https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg?t=st=1746714953~exp=1746718553~hmac=2b51b4d87cbb94293c2448456d75c8defe2aed60406764649c58b0900219a439&w=900" alt="Image 7">
+        <img src="https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?t=st=1746714994~exp=1746718594~hmac=6fe8c4d89201ade36444a7e142e6d7ccf6e87fc59232690de665633e383dc3f6&w=996" alt="Image 8">
+        <img src="https://img.freepik.com/free-photo/top-view-unrecognizable-hacker-performing-cyberattack-night_1098-18706.jpg?t=st=1746715031~exp=1746718631~hmac=9a2fd3530a3ca8bf7d660de67453114e555bed4f06d1f1aaf5b30400e9e0f9ea&w=740" alt="Image 9">
+        <img src="https://img.freepik.com/free-photo/cyber-security-experts-working-with-tech-devices-neon-lights_23-2151645630.jpg?t=st=1746716056~exp=1746719656~hmac=4065552c4f83376c86bbec439d8dfd3ee4609a6c9301b47986c9719956c144a6&w=740" alt="Image 10">
+    </div>
+
+    <div class="buttons">
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="saveImageToLocalStorage()">Save Image</button>
+        <button onclick="clearAllImages()">Clear All Images</button>
+        <button onclick="saveGalleryChanges()">Save Changes</button>
+    </div>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This page demonstrates the use of CSS3 transitions and animations combined with JavaScript functions to create interactive and visually appealing web elements.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
